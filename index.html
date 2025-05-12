@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +15,63 @@
     <meta name="description" content="Learn how to start an online store and find winning products in 3 simple steps. Free guide with deep research and actionable insights.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
     <!-- Header -->
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" class="text-xl font-bold text-white hover:text-blue-400 transition duration-300">
+            <a href="https://test-acc-12349.github.io/how-to-start-an-online-store-2025-05-12-nm2b7" class="text-xl font-bold text-white hover:text-blue-400 transition duration-300">
                 Store<span class="text-blue-500">Ninja</span>
             </a>
+            
+            <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-8">
                 <a href="#features" class="text-gray-300 hover:text-white transition duration-300">Features</a>
                 <a href="#benefits" class="text-gray-300 hover:text-white transition duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a>
                 <a href="#faq" class="text-gray-300 hover:text-white transition duration-300">FAQ</a>
             </div>
-            <a href="https://ninja200.online" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 transform hover:scale-105">
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2 rounded-lg hover:bg-gray-800 transition duration-300" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <a href="https://ninja200.online" class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition duration-300 transform hover:scale-105 hover:shadow-lg">
                 Get Started
             </a>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-900 border-b border-gray-800">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#features" class="block text-gray-300 hover:text-white transition duration-300 py-2">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white transition duration-300 py-2">Benefits</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-white transition duration-300 py-2">Testimonials</a>
+                <a href="#about" class="block text-gray-300 hover:text-white transition duration-300 py-2">About</a>
+                <a href="#faq" class="block text-gray-300 hover:text-white transition duration-300 py-2">FAQ</a>
+                <a href="https://ninja200.online" class="block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium text-center transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-24 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-gray-900"></div>
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="text-center max-w-4xl mx-auto">
+            <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
-                    How To Start An Online Store
+                    Launch Your Dream Online Store Today
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                    Find A Winning Product In 3 Steps
+                    Discover winning products and build a successful e-commerce business with our proven 3-step system
                 </p>
-                <a href="https://ninja200.online" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full font-semibold transition duration-300 transform hover:scale-105">
-                    Start Your Journey
+                <a href="https://ninja200.online" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-4 rounded-full font-semibold transition duration-300 transform hover:scale-105 hover:shadow-xl">
+                    Start Your Success Story
                     <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                     </svg>
@@ -50,34 +83,34 @@
     <!-- Features Section -->
     <section id="features" class="py-24 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Three Simple Steps</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Three Simple Steps to E-commerce Success</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition duration-300 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Get Ideas</h3>
-                    <p class="text-gray-400">Discover trending products and untapped niches with our comprehensive research tools.</p>
+                    <h3 class="text-xl font-semibold mb-4">Market Research & Product Discovery</h3>
+                    <p class="text-gray-400">Access our comprehensive database of trending products, market analysis, and competitor insights. Identify high-potential niches with proven demand and profit margins.</p>
                 </div>
-                <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition duration-300 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Generate A Plan</h3>
-                    <p class="text-gray-400">Create a customized action plan with step-by-step guidance for your store launch.</p>
+                    <h3 class="text-xl font-semibold mb-4">Custom Business Strategy</h3>
+                    <p class="text-gray-400">Receive a personalized action plan tailored to your goals and budget. Get detailed guidance on pricing, marketing, supplier selection, and store optimization.</p>
                 </div>
-                <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-900 rounded-2xl p-8 transform hover:scale-105 transition duration-300 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Find Inspiration</h3>
-                    <p class="text-gray-400">Browse successful case studies and get inspired by proven store examples.</p>
+                    <h3 class="text-xl font-semibold mb-4">Success Blueprint & Resources</h3>
+                    <p class="text-gray-400">Study real success stories and proven business models. Access our library of templates, tools, and step-by-step implementation guides.</p>
                 </div>
             </div>
         </div>
@@ -86,34 +119,122 @@
     <!-- Benefits Section -->
     <section id="benefits" class="py-24">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Why Entrepreneurs Choose StoreNinja</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2v5m-6 0h.01M16 20h.01M21 20h.01M22 16h.01M22 12h.01M22 8h.01M18 4h.01M14 4h.01M10 4h.01M6 4h.01M2 20h.01M2 16h.01M2 12h.01M2 8h.01M2 4h.01"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Free to Start</h3>
-                    <p class="text-gray-400">Begin your journey without any upfront costs or commitments.</p>
+                    <h3 class="text-xl font-semibold mb-4">Risk-Free Start</h3>
+                    <p class="text-gray-400">Begin your journey with zero upfront costs. Our comprehensive free plan includes essential tools and guidance to validate your business idea.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Generate In 5 Mins</h3>
-                    <p class="text-gray-400">Quick and efficient process to get you started right away.</p>
+                    <h3 class="text-xl font-semibold mb-4">Rapid Implementation</h3>
+                    <p class="text-gray-400">Launch your store in record time with our streamlined 5-minute setup process. Automated tools handle the technical details while you focus on growth.</p>
                 </div>
-                <div class="text-center">
+                <div class="text-center transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-blue-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Deep Research</h3>
-                    <p class="text-gray-400">Access comprehensive market analysis and product insights.</p>
+                    <h3 class="text-xl font-semibold mb-4">Data-Driven Success</h3>
+                    <p class="text-gray-400">Make informed decisions with our AI-powered market analysis tools. Access real-time trends, competition data, and profit potential metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">About StoreNinja</h2>
+            <div class="max-w-3xl mx-auto space-y-8 text-gray-300">
+                <p class="text-lg leading-relaxed" data-aos="fade-up">
+                    Founded in 2020 by a team of successful e-commerce entrepreneurs, StoreNinja emerged from our own struggles in building profitable online stores. We witnessed countless aspiring business owners face the same challenges we once did - overwhelming information, analysis paralysis, and costly mistakes.
+                </p>
+                <p class="text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Our mission is to democratize e-commerce success by providing entrepreneurs with data-driven tools, actionable insights, and proven strategies. We believe everyone deserves the opportunity to build a thriving online business, regardless of their experience level or technical background. Our core values of transparency, continuous innovation, and customer success drive everything we do.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 rounded-xl p-8 transform hover:scale-105 transition duration-300" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"StoreNinja's market research tools helped me find a winning product in just 2 days. Within the first month, my store generated $12,000 in sales. The step-by-step guidance was invaluable for a beginner like me."</p>
+                    <div>
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-gray-400">Founder, PetParadise.com</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The competitor analysis feature saved me countless hours of research. I was able to identify gaps in the market and position my products perfectly. My store hit $50K in revenue by month 3."</p>
+                    <div>
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-gray-400">CEO, TechGearPro</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"As a complete newbie to e-commerce, StoreNinja's support was game-changing. The customized action plan helped me avoid common pitfalls and launch successfully."</p>
+                    <div>
+                        <p class="font-semibold">Emma Williams</p>
+                        <p class="text-gray-400">Owner, StyleVault</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-8 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">"The supplier verification system alone is worth its weight in gold. I avoided several potential scams and found reliable partners for my business. Now scaling to multiple stores."</p>
+                    <div>
+                        <p class="font-semibold">David Martinez</p>
+                        <p class="text-gray-400">Founder, FitnessFuel</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -122,35 +243,45 @@
     <!-- FAQ Section -->
     <section id="faq" class="py-24 bg-gray-800">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="bg-gray-900 rounded-xl p-6">
-                    <h3 class="text-lg font-semibold mb-3">How do I get started?</h3>
-                    <p class="text-gray-400">Simply visit our website and follow the 3-step process. No prior experience needed.</p>
+                <div class="bg-gray-900 rounded-xl p-6 transform hover:scale-102 transition duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-3">How much money do I need to start an online store?</h3>
+                    <p class="text-gray-400">With StoreNinja, you can start with as little as $500. This covers essential costs like domain registration, basic inventory, and marketing. Our platform helps you maximize your initial investment with data-driven decisions and cost-effective strategies.</p>
                 </div>
-                <div class="bg-gray-900 rounded-xl p-6">
-                    <h3 class="text-lg font-semibold mb-3">What kind of support do you offer?</h3>
-                    <p class="text-gray-400">We provide comprehensive guides, tutorials, and email support to help you succeed.</p>
+                <div class="bg-gray-900 rounded-xl p-6 transform hover:scale-102 transition duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-3">Do I need technical experience to use StoreNinja?</h3>
+                    <p class="text-gray-400">Not at all! Our platform is designed for users of all skill levels. We provide step-by-step guidance, video tutorials, and automated tools that handle the technical aspects. Our support team is also available to help you every step of the way.</p>
                 </div>
-                <div class="bg-gray-900 rounded-xl p-6">
-                    <h3 class="text-lg font-semibold mb-3">Is this suitable for beginners?</h3>
-                    <p class="text-gray-400">Yes! Our platform is designed to help both beginners and experienced entrepreneurs.</p>
+                <div class="bg-gray-900 rounded-xl p-6 transform hover:scale-102 transition duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-3">How long does it take to see results?</h3>
+                    <p class="text-gray-400">While results vary, many of our users see their first sales within 2-4 weeks of launch. Following our proven system and implementing our strategies consistently, you can expect to build a profitable store within 3-6 months.</p>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-6 transform hover:scale-102 transition duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-3">What kind of support do you provide?</h3>
+                    <p class="text-gray-400">We offer comprehensive support including live chat, email assistance, weekly coaching calls, and access to our private community. Our expert team provides guidance on product selection, marketing strategies, technical setup, and scaling your business.</p>
+                </div>
+                <div class="bg-gray-900 rounded-xl p-6 transform hover:scale-102 transition duration-300" data-aos="fade-up">
+                    <h3 class="text-lg font-semibold mb-3">Can I use StoreNinja with existing online stores?</h3>
+                    <p class="text-gray-400">Absolutely! Our tools and strategies work great for both new and existing stores. We offer specialized optimization services to help established businesses increase their revenue and streamline operations.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Start Your Online Store?</h2>
-            <p class="text-xl mb-12 text-blue-100">Join thousands of successful entrepreneurs today.</p>
-            <a href="https://ninja200.online" class="inline-flex items-center bg-white text-blue-600 text-lg px-8 py-4 rounded-full font-semibold transition duration-300 transform hover:scale-105">
-                Get Started Now
-                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-            </a>
+    <section class="py-24 bg-gradient-to-r from-blue-600 to-blue-800" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'); background-size: cover; background-position: center;">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="bg-black/50 p-12 rounded-3xl backdrop-blur-sm">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-up">Ready to Transform Your E-commerce Dreams into Reality?</h2>
+                <p class="text-xl mb-12 text-blue-100" data-aos="fade-up">Join over 10,000 successful entrepreneurs who've launched their stores with StoreNinja.</p>
+                <a href="https://ninja200.online" class="inline-flex items-center bg-white text-blue-600 text-lg px-8 py-4 rounded-full font-semibold transition duration-300 transform hover:scale-105 hover:shadow-xl" data-aos="fade-up">
+                    Start Your Success Story Now
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -160,25 +291,39 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Store<span class="text-blue-500">Ninja</span></h3>
-                    <p class="text-gray-400">Your guide to e-commerce success.</p>
+                    <p class="text-gray-400">Empowering entrepreneurs to build successful online stores.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="#features" class="hover:text-white transition duration-300">Features</a></li>
                         <li><a href="#benefits" class="hover:text-white transition duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-300">About</a></li>
                         <li><a href="#faq" class="hover:text-white transition duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Contact</h4>
                     <p class="text-gray-400">admin@ninja200.online</p>
+                    <div class="mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/how-to-start-an-online-store-2025-05-12-nm2b7/privacy.html" class="hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/how-to-start-an-online-store-2025-05-12-nm2b7/terms.html" class="hover:text-white transition duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/how-to-start-an-online-store-2025-05-12-nm2b7/blog.html" class="hover:text-white transition duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -191,6 +336,35 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
     </script>
+</body>
 </body>
 </html>
